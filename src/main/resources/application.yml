@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/newtest
+    username: postgres
+    password: amin
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto:
+      show_sql: true
+      properties:
+        hibernate:
+          format_sql: trace
+        database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+logging:
+  level:
+    org:
+      hibernate:
+        type: trace
